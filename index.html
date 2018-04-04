@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Games | Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" media = "screen" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Nav tag -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" id = "logo" href="index.html">Alex Obaseki</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ">
+                <ul class="navbar-nav ml-auto nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Wrapper to push footer to the bottom -->
+    <div class="wrapper">
+        <!-- Container for content -->
+        <!-- This div inherit properties id "#game-container"-->
+        <div class="container my-4 wrapper" id = "game-container">
+            <section>
+                <div class="row my-4 game-row">
+                    <div class="col text-center">
+                        <h1>Crystal Collector</h1>
+                    </div>
+                </div>
+                <div class="row my-4 game-row">
+                    <div class="col-12 text-center game-col">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <P>There are four below. By  clicking on a crystal you will add a specific amount of points to your total score.</P>
+                        <p>You win the game by matching your total score to the random number genrated at the start of each round, you lose the game if your total score goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click on it</p>
+                        <p>Each time the game starts, it changes the values of each crystal.</p>
+                        <!-- <img  id= "image" src = "assets/images/hangman-rap.png" alt = "work-picture">
+                        <span id = "rapper"><p>Hangman</p></span> -->
+                    </div>
+                </div>
+                <div class="row my-4 game-row">
+                    <div class="col-4 text-center game-col">
+                        <p>Current Number</p>
+                        <h2 id="current-number">0</h2>
+                    </div>
+                </div>
+                <div class="row my-4 crystals game-row">
+                    <div class="col-3 text-center px-1 py-1 game-col"> 
+                        <img id = "black-crystal" src = "assets/images/black-crystal.png" alt = "black-crystal">
+                    </div>
+                    <div class="col-3 text-center px-1 py-1 game-col">
+                        <img id = "zeke-crystal" src = "assets/images/zeke-crystal.png" alt = "zeke-crystal">
+                    </div>
+                    <div class="col-3 text-center px-1 py-1 game-col">
+                        <img id = "red-crystal" src = "assets/images/red-crystal.png" alt = "red-crystal">
+                    </div>
+                    <div class="col-3 text-center px-1 py-1 game-col">
+                        <img id = "green-crystal" src = "assets/images/green-crystal.png" alt = "green-crystal">
+                    </div>
+                </div>
+
+                <div class="row my-4 game-row">
+                    <div class="col-4 px-1 py-1 game-col">
+                        <p>Wins</p>
+                        <h2 id="wins">0</h2>
+                    </div>
+                    <div class="col-4 px-1 py-1 game-col">
+                        <p>Total Current Score</p>
+                        <h2 id="total-score">0</h2>
+                    </div>
+                    <div class="col-4 px-1 py-1 game-col">
+                        <p>Looses</p>
+                        <h2 id="looses">0</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="my-4 py-1" id = "connect-me">
+            <!-- <div class="row game-row">
+                <div class="col-9 game-col">
+                    <h2>Connect with Me</h2>
+                </div> -->
+                
+            </div>
+            <div class="row game-row">
+                <div class="col-6 game-col">
+                    <a href="https://github.com/jealob"><img src="assets/images/github_hover.png" class="social" alt="Github"></a>
+                    <a href="https://stackoverflow.com/users/6544031/jealob"><img src="assets/images/stackoverflow_hover.png" class="social" alt="LinkedIn"></a>
+                    <a href="https://www.linkedin.com/in/alexander-obaseki-03014b5a/"><img src="assets/images/linkedin_hover.png" class="social" alt="Stack Overflow"></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="container">
+            Copyright &copy; 2018
+        </div>
+    </footer>  
+    <!-- End of footer -->
+    <!-- Link to Core Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
