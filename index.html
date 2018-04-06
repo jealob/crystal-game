@@ -51,28 +51,26 @@
                         <p>You win the game by matching your total score to the random number genrated at the start of each round, you lose the game if your total score goes above the random number.</p>
                         <p>The value of each crystal is hidden from you until you click on it</p>
                         <p>Each time the game starts, it changes the values of each crystal.</p>
-                        <!-- <img  id= "image" src = "assets/images/hangman-rap.png" alt = "work-picture">
-                        <span id = "rapper"><p>Hangman</p></span> -->
                     </div>
                 </div>
                 <div class="row my-4 game-row">
                     <div class="col-4 text-center game-col">
-                        <p>Current Number</p>
-                        <h2 id="current-number">0</h2>
+                        <p>Target Number</p>
+                        <h2 id="target-number">0</h2>
                     </div>
                 </div>
                 <div class="row my-4 crystals game-row">
-                    <div class="col-3 text-center px-1 py-1 game-col"> 
-                        <img id = "black-crystal" src = "assets/images/black-crystal.png" alt = "black-crystal">
+                    <div class="col-3 text-center px-1 py-1 game-col" value = "black" id = "black"> 
+                        <img src = "assets/images/black-crystal.png" alt = "black-crystal">
                     </div>
-                    <div class="col-3 text-center px-1 py-1 game-col">
-                        <img id = "zeke-crystal" src = "assets/images/zeke-crystal.png" alt = "zeke-crystal">
+                    <div class="col-3 text-center px-1 py-1 game-col"  value = "zeke" id = "zeke">
+                        <img src = "assets/images/zeke-crystal.png"  alt = "zeke-crystal">
                     </div>
-                    <div class="col-3 text-center px-1 py-1 game-col">
-                        <img id = "red-crystal" src = "assets/images/red-crystal.png" alt = "red-crystal">
+                    <div class="col-3 text-center px-1 py-1 game-col" value = "red" id = "red">
+                        <img src = "assets/images/red-crystal.png" alt = "red-crystal">
                     </div>
-                    <div class="col-3 text-center px-1 py-1 game-col">
-                        <img id = "green-crystal" src = "assets/images/green-crystal.png" alt = "green-crystal">
+                    <div class="col-3 text-center px-1 py-1 game-col" value = "green" id = "green">
+                        <img src = "assets/images/green-crystal.png"  alt = "green-crystal">
                     </div>
                 </div>
 
@@ -83,11 +81,11 @@
                     </div>
                     <div class="col-4 px-1 py-1 game-col">
                         <p>Total Current Score</p>
-                        <h2 id="total-score">0</h2>
+                        <h2 id="current-score">0</h2>
                     </div>
                     <div class="col-4 px-1 py-1 game-col">
                         <p>Looses</p>
-                        <h2 id="looses">0</h2>
+                        <h2 id="losses">0</h2>
                     </div>
                 </div>
             </section>
