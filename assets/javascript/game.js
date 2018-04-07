@@ -56,8 +56,6 @@ $(document).ready(function () {
         $("#wins").text(wins);
         $("#losses").text(losses);
         $("#current-score").html(currentNumber);
-        console.log(targetNumber);
-        console.log(crystals);
     }
 
     function newGame() {
