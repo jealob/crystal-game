@@ -1,5 +1,4 @@
-// JS for the Hangman game.
-
+// JS for the Crystal game.
 //Call back for when document is fully render to the browser
 $(document).ready(function () {
     let targetNumber;
@@ -8,7 +7,6 @@ $(document).ready(function () {
     let wins = 0;
     let losses = 0;
     var x = document.createElement("audio");
-
     // Click event check whether or not the current score is equals target score and run the program accordingly.
     $(".crystals").on("click", ".game-col", function () {
         // currentNumber < targetNumber makes sure that execution of accidental click event is unresponsive during end of round.
@@ -35,15 +33,11 @@ $(document).ready(function () {
             }
         }
     });
-
     $("body").on("click", "#new-game", function(){
         newGame();
     });
-
     $("#wins").text(wins);
     $("#losses").text(losses);
-    
-
     // nextRound initializes the global variables. Assign random numbers to both targetNumber and the crystal.
     // the value of the crystals are stored in the an object crystal for easy access and manipulation between DOM events and the crystals object properties
     function nextRound() { 
@@ -57,14 +51,11 @@ $(document).ready(function () {
         $("#losses").text(losses);
         $("#current-score").html(currentNumber);
     }
-
     function newGame() {
         wins = 0;
         losses = 0;
-        // gameSoundPause();
         nextRound();
     }
-
 //  Function getRandomInt returns random number between two numbers max and min
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -74,11 +65,5 @@ $(document).ready(function () {
         x.setAttribute("src", s);
         x.play();
     }
-
-    // Stop existing sound the start new game 
-    // function gameSoundPause() {
-    //     x.pause(s)
-    // }
-
     nextRound();
 });
